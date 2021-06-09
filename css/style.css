@@ -1,0 +1,395 @@
+/**************************
+PROJET : INTEGRATION MAQUETTE ASTOUNDING
+**************************/
+
+/**************************
+GLOBAL
+**************************/
+
+* {
+    box-sizing: border-box;
+    /**/
+    /*border: 1px solid grey; A SUPPRIMER (utile lors de la création du gabarit)  */
+}
+
+body {
+    word-wrap: break-word;
+    /* Pour que le texte ne dépasse pas du bloc parent */
+    font-family: georgia, serif;
+    color: #979797;
+    font-size: 13px;
+}
+
+img,
+iframe,
+video {
+    max-width: 100%;
+    /* Pour que les éléments ne dépassent pas de leurs conteneurs */
+}
+
+img {
+    vertical-align: middle;
+    /* Pour enlever la marge basse par défaut */
+}
+
+a {
+    color: #40aed7;
+    transition: all 0.7s ease;
+    text-decoration: none;
+}
+
+/**************************
+STRUCTURE
+**************************/
+
+.conteneur {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 225px;
+    position: relative;
+}
+
+
+/**************************
+MENU
+**************************/
+.logo {
+    width: 200px;
+
+}
+
+.menu {
+    width: 640px;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    background-color: #40aed7;
+}
+
+.site,
+.slogan {
+    display: block;
+    color: #fff;
+    font-weight: 100;
+}
+
+.site {
+    text-transform: uppercase;
+    font-size: 28px;
+
+}
+.fond1 {
+    background-color: #000;
+    border-top: 5px solid #40aed7;
+}
+
+.entete {
+    min-height: 120px;
+    align-items: center;
+}
+
+/**************************
+SERVICES
+**************************/
+.services h1 {
+    font-size: 124px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #333333;
+    line-height: 110px;
+}
+
+.box {
+    width: 225px;
+    position: relative;
+    text-align: center;
+}
+
+.services h2 a{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    color: #333333;
+}
+
+.services h2 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.services p {
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 18px;
+}
+
+.services .box {
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    padding: 155px 30px 20px 30px;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+.services .box:hover {
+    background-color: #40aed7;
+    color: #fff;
+    background-position: top right;
+}
+
+.services .box a:hover {
+    color: #fff;
+}
+
+.service1 {
+    background-image: url(../img/sprite-icon-1.png);
+}
+
+.service2 {
+    background-image: url(../img/sprite-icon-2.png);
+}
+
+.service3 {
+    background-image: url(../img/sprite-icon-3.png);
+}
+
+.service4 {
+    background-image: url(../img/sprite-icon-4.png);
+}
+
+
+/**************************
+SERVICES
+**************************/
+.equipe {
+    padding-bottom: 60px;
+}
+
+.equipe h1 {
+    font-size: 124px;
+    color: #d3d3d3;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.equipe h2{
+    border-bottom: 1px solid #e4e4e4;
+    color: black;
+    line-height: 22.4px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0;
+}
+
+.equipe p{
+        line-height: 18.2px;
+        padding: 15px 0 15px 0;
+ }
+
+.equipe a{
+    text-align: right;
+    display: block;
+    font-weight: 200;
+}
+
+.equipe a img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.equipe a:hover img{
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.fleche{
+    float: right;
+    padding-right: 10px;
+    position: relative;
+    display: block;
+    padding-top: 15px;
+
+}
+
+.fleche::after{
+    content: "\0000BB";
+    color: #40aed7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+/**************************
+SERVICES
+**************************/
+aside {
+    background-color: #303030;
+    min-height: 390px;
+}
+aside a:hover,
+.equipe a:hover{
+    font-weight: bolder;
+}
+.bas h2{
+    line-height: 19.2px;
+     font-weight: 100;
+     font-size: 16px;
+     margin: 0;
+     padding-top: 40px;
+     padding-bottom: 30px;
+     color: #fff;
+ }
+ 
+h4,
+time {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.bas h2,
+h3,
+h4,
+p,
+time,
+li {
+    text-align: left;
+    margin: 0;
+}
+
+.bas1 h3{
+    line-height: 15.6px;
+    
+}
+.bas1 span{
+    color: #40aed7;
+}
+.bas1 p time{
+    text-align: left;
+}
+.bas1 p{
+    line-height: 20.8px;
+    margin:0;
+   
+}
+.bas1 a{
+    text-align: left;
+}
+
+.bas1 h4{
+    padding-top: 10px;  
+    padding-bottom: 5px;
+}
+h4+p{
+    padding-bottom: 5px;
+}
+
+.bas1>p>a{
+    margin:0;
+}
+
+.bas li {
+    display: block;
+    list-style: none;
+    border-bottom: 1px solid #404040;
+    text-align: left;
+}
+.bas2 li a::before{
+    content:"\0000BB";
+    color: #40aed7;
+    }
+
+.bas2 ul{
+    padding: 0;
+    margin: 0;
+}
+article.bas1 p a::after {
+    content: "\0000BB";
+}
+article.box.bas2 a{
+    line-height: 34.45px;
+}
+.bas3 p{
+    font-weight: 400;
+    line-height: 21px;
+    padding-bottom: 19px;
+}
+/********** Contact us *********/
+input[type="text"],
+textarea, input[type="email"] {
+    display: block;
+    color: #989898;
+    background-color: #222 ;
+    border: none;
+    padding: 12px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+textarea{
+    min-height: 80px;
+
+}
+input[type="submit"]{
+    display: block;
+    font-size: 12px;
+    background-color:#40aed7 ;
+    color: #fff;
+    text-transform: uppercase;
+    width: 77px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/********************************* FOOTER ****************************************/
+footer{
+    min-height: 60px;
+    background-color: #0b0b0b;
+ 
+}
+
+footer small{
+    padding: 24px 0 ;
+    font-size: 13px;
+}
+
